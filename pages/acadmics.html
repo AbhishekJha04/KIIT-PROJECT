@@ -55,83 +55,156 @@
       </header>
 
       <main>
-        <section id="overview" class="content-section">
-            <h3>Overview</h3>
-            <p>KIIT is unique among its peer institutions in having Twenty Eight schools co-located on one contiguous campus, and all of them possess exceptional breadth and depth of excellence. This naturally facilitates multidisciplinary collaboration.</p>
-            <p>KIIT is a private academic institution dedicated to providing educational opportunities for the intellectual, social, and professional development of a diverse student population. To achieve this purpose, the institution offers focused and balanced curricula at Undergraduate, Master’s and Doctoral levels. A broad-based core curriculum is offered, promoting critical thinking, effective verbal and written communication, and skills for life-long learning. KIIT’S approach to higher education and the resulting varied academic experiences provide students with the intellectual acumen and pragmatic approach necessary to create the foundation for personal and professional fulfillment.</p>
-            <p>3000 Faculty</p>
-            <p>200 Academic Programmes</p>
-            <p>40000+ Students</p>
-        </section>
-
-
-        <section id="academic-calendar" class="content-section">
-          <h3>Academic Calendar</h3>
-          <div class="school">
-              <h4 onclick="toggleCalendar('mechanical')">School of Mechanical Engineering</h4>
-              <div id="mechanical-calendar" class="calendar hidden">
-                  <table>
-                      <thead>
-                          <tr>
-                              <th>Autumn</th>
-                              <th>Spring</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <td>1st Semester B. Tech</td>
-                              <td>2nd Semester B. Tech</td>
-                          </tr>
-                          <tr>
-                              <td>3rd Semester B. Tech</td>
-                              <td>4th Semester B. Tech</td>
-                          </tr>
-                          <tr>
-                              <td>5th Semester B. Tech</td>
-                              <td>6th Semester B. Tech</td>
-                          </tr>
-                          <tr>
-                              <td>7th Semester B. Tech</td>
-                              <td>8th Semester B. Tech</td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-          </div>
-          <div class="school">
-              <h4 onclick="toggleCalendar('computer')">School of Computer Applications</h4>
-              <div id="computer-calendar" class="calendar hidden">
-                <table>
-                  <thead>
-                      <tr>
-                          <th>Autumn</th>
-                          <th>Spring</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>1st Semester B. Tech</td>
-                          <td>2nd Semester B. Tech</td>
-                      </tr>
-                      <tr>
-                          <td>3rd Semester B. Tech</td>
-                          <td>4th Semester B. Tech</td>
-                      </tr>
-                      <tr>
-                          <td>5th Semester B. Tech</td>
-                          <td>6th Semester B. Tech</td>
-                      </tr>
-                      <tr>
-                          <td>7th Semester B. Tech</td>
-                          <td>8th Semester B. Tech</td>
-                      </tr>
-                  </tbody>
-              </table>
-              </div>
-          </div>
-          <!-- Add more schools and their calendars here -->
+        <section id="overview" class="overview">
+          <h3>Overview</h3>
+          <p>KIIT is unique among its peer institutions in having Twenty Eight schools co-located on one contiguous campus, and all of them possess exceptional breadth and depth of excellence. This naturally facilitates multidisciplinary collaboration.</p>
+          <p>KIIT is a private academic institution dedicated to providing educational opportunities for the intellectual, social, and professional development of a diverse student population. To achieve this purpose, the institution offers focused and balanced curricula at Undergraduate, Master’s and Doctoral levels. A broad-based core curriculum is offered, promoting critical thinking, effective verbal and written communication, and skills for life-long learning. KIIT’S approach to higher education and the resulting varied academic experiences provide students with the intellectual acumen and pragmatic approach necessary to create the foundation for personal and professional fulfillment.</p>
+          <p><i class='bx bxs-user'></i> 3000 Faculty</p>
+          <p><i class='bx bxs-graduation'></i> 200 Academic Programmes</p>
+          <p><i class="bx bxs-user"></i> 40000+ Students</p>
       </section>
       
+
+
+            
+      <section id="academic-calendar" class="content-section">
+        <h3>Academic Calendar</h3>
+        <div class="aca">
+        <div class="schools-container">
+            <div class="school" onclick="toggleCalendar('mechanical')">
+                <h4>School of Mechanical Engineering</h4>
+            </div>
+            <div class="school" onclick="toggleCalendar('computer')">
+                <h4>School of Computer Applications</h4>
+            </div>
+            <div class="school" onclick="toggleCalendar('Electrical')">
+              <h4>School of Electrical Engineering</h4>
+          </div>
+          <div class="school" onclick="toggleCalendar('Sound')">
+              <h4>School of Sound Engineering</h4>
+          </div>
+            <!-- Add more schools here -->
+        </div>
+
+        <div class="calendar-container">
+            <div id="mechanical-calendar" class="calendar ">
+              <table>
+                <thead>
+                    <tr>
+                        <th>Autumn</th>
+                        <th>Spring</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1st Semester B. Tech</td>
+                        <td>2nd Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Semester B. Tech</td>
+                        <td>4th Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>5th Semester B. Tech</td>
+                        <td>6th Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>7th Semester B. Tech</td>
+                        <td>8th Semester B. Tech</td>
+                    </tr>
+                </tbody>
+            </table> 
+            </div>
+            <div id="computer-calendar" class="calendar hidden">
+              <table>
+                <thead>
+                    <tr>
+                        <th>Autumn</th>
+                        <th>Spring</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10st Semester B. Tech</td>
+                        <td>2nd Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Semester B. Tech</td>
+                        <td>4th Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>5th Semester B. Tech</td>
+                        <td>6th Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>7th Semester B. Tech</td>
+                        <td>8th Semester B. Tech</td>
+                    </tr>
+                </tbody>
+            </table> 
+            </div>
+            <div id="electrical-calendar" class="calendar hidden">
+              <table>
+                <thead>
+                    <tr>
+                        <th>Autumn</th>
+                        <th>Spring</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10st Semester B. Tech</td>
+                        <td>2nd Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Semester B. Tech</td>
+                        <td>4th Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>5th Semester B. Tech</td>
+                        <td>6th Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>7th Semester B. Tech</td>
+                        <td>8th Semester B. Tech</td>
+                    </tr>
+                </tbody>
+            </table> 
+            </div>
+            <div id="sound-calendar" class="calendar hidden">
+              <table>
+                <thead>
+                    <tr>
+                        <th>Autumn</th>
+                        <th>Spring</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10st Semester B. Tech</td>
+                        <td>2nd Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>3rd Semester B. Tech</td>
+                        <td>4th Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>5th Semester B. Tech</td>
+                        <td>6th Semester B. Tech</td>
+                    </tr>
+                    <tr>
+                        <td>7th Semester B. Tech</td>
+                        <td>8th Semester B. Tech</td>
+                    </tr>
+                </tbody>
+            </table> 
+            </div>
+            <!-- Add more calendar containers here -->
+        </div>
+      </div>
+    </section>
+    
+
 
         <section id="holidays" class="content-section">
           <h3>Holiday List</h3>
@@ -308,10 +381,38 @@
 
     <script>
       
+    // function toggleCalendar(school) {
+    //     var calendar = document.getElementById(school + '-calendar');
+    //     calendar.classList.toggle('hidden');
+    // }
+   
+    
     function toggleCalendar(school) {
-        var calendar = document.getElementById(school + '-calendar');
-        calendar.classList.toggle('hidden');
+    var calendar = document.getElementById(school + '-calendar');
+    var isActive = !calendar.classList.contains('hidden');
+    
+    // Close all calendars
+    var allCalendars = document.querySelectorAll('.calendar');
+    allCalendars.forEach(function(cal) {
+        cal.classList.add('hidden');
+    });
+    
+    // Remove 'active' class from all schools
+    var allSchools = document.querySelectorAll('.school');
+    allSchools.forEach(function(s) {
+        s.classList.remove('active');
+    });
+    
+    // If the clicked calendar was not active, open it
+    if (!isActive) {
+        calendar.classList.remove('hidden');
+        var clickedSchool = document.getElementById(school);
+        clickedSchool.classList.add('active');
     }
+}
+
+
+
     </script>
 </body>
 
