@@ -64,51 +64,74 @@
             <p>40000+ Students</p>
         </section>
 
-        <section id="schools" class="content-section">
-            <h3>Schools</h3>
-            <ul>
-                <li>School of Engineering</li>
-                <li>School of Computer Applications</li>
-                <li>School of Applied Sciences</li>
-                <li>School of Biotechnology</li>
-                <li>School of Law</li>
-                <li>School of Management</li>
-                <li>School of Rural Management</li>
-                <li>School of Architecture</li>
-                <li>School of Public Health</li>
-                <li>School of Film & Media Sciences</li>
-                <li>School of Fashion Design</li>
-                <li>School of Mass Communication</li>
-                <li>School of Yoga</li>
-                <li>School of Language and Literature</li>
-                <li>School of Liberal Studies</li>
-                <li>School of Social, Financial & Human Sciences</li>
-                <li>School of Nursing</li>
-            </ul>
-        </section>
 
-        <section id="calendar" class="content-section">
-            <h3>Academic Calendar</h3>
-            <p>AUTUMN</p>
-            <ul>
-                <li>1st Semester B. Tech</li>
-                <li>3rd Semester B. Tech</li>
-                <li>5th Semester B. Tech</li>
-                <li>7th Semester B. Tech</li>
-                <li>1st Semester B.Tech Program, Special Section: B-34</li>
-                <li>1st Semester M. Tech</li>
-                <li>3rd Semester M. Tech</li>
-            </ul>
-            <p>SPRING</p>
-            <ul>
-                <li>2nd Semester B. Tech</li>
-                <li>4th Semester B. Tech</li>
-                <li>6th Semester B. Tech</li>
-                <li>8th Semester B. Tech</li>
-                <li>2nd Semester M. Tech</li>
-                <li>4th Semester M. Tech</li>
-            </ul>
-        </section>
+        <section id="academic-calendar" class="content-section">
+          <h3>Academic Calendar</h3>
+          <div class="school">
+              <h4 onclick="toggleCalendar('mechanical')">School of Mechanical Engineering</h4>
+              <div id="mechanical-calendar" class="calendar hidden">
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>Autumn</th>
+                              <th>Spring</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1st Semester B. Tech</td>
+                              <td>2nd Semester B. Tech</td>
+                          </tr>
+                          <tr>
+                              <td>3rd Semester B. Tech</td>
+                              <td>4th Semester B. Tech</td>
+                          </tr>
+                          <tr>
+                              <td>5th Semester B. Tech</td>
+                              <td>6th Semester B. Tech</td>
+                          </tr>
+                          <tr>
+                              <td>7th Semester B. Tech</td>
+                              <td>8th Semester B. Tech</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <div class="school">
+              <h4 onclick="toggleCalendar('computer')">School of Computer Applications</h4>
+              <div id="computer-calendar" class="calendar hidden">
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Autumn</th>
+                          <th>Spring</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1st Semester B. Tech</td>
+                          <td>2nd Semester B. Tech</td>
+                      </tr>
+                      <tr>
+                          <td>3rd Semester B. Tech</td>
+                          <td>4th Semester B. Tech</td>
+                      </tr>
+                      <tr>
+                          <td>5th Semester B. Tech</td>
+                          <td>6th Semester B. Tech</td>
+                      </tr>
+                      <tr>
+                          <td>7th Semester B. Tech</td>
+                          <td>8th Semester B. Tech</td>
+                      </tr>
+                  </tbody>
+              </table>
+              </div>
+          </div>
+          <!-- Add more schools and their calendars here -->
+      </section>
+      
 
         <section id="holidays" class="content-section">
           <h3>Holiday List</h3>
@@ -281,6 +304,15 @@
         &copy; 2024 College Name | Designed by College Web Team
       </div>
     </footer>
+
+
+    <script>
+      
+    function toggleCalendar(school) {
+        var calendar = document.getElementById(school + '-calendar');
+        calendar.classList.toggle('hidden');
+    }
+    </script>
 </body>
 
 </html>

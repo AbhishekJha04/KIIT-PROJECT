@@ -25,3 +25,7 @@ function prevSlide() {
 setInterval(() => {
     nextSlide();
 }, 5000); // Change slide every 3 seconds
+
+
+
+
