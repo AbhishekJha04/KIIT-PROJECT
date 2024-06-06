@@ -26,10 +26,10 @@
         <li><a href="#">Founder</a></li>
         <li><a href="#">A-z Index</a></li>
         <li><a href="#">Broucher</a></li>
-        <button class="upper-btn">Fee Payment</button>
+        <a href="https://form.kiit.ac.in/payment/"><button class="upper-btn">Fee Payment</button></a>
       </ul>
     </nav>
-    <div class="links">
+    <div class="social-links">
       <i class='bx bxl-facebook-circle' style='color:#ffffff'></i>
       <i class='bx bxl-instagram' style='color:#ffffff'></i>
       <i class='bx bxl-linkedin' style='color:#ffffff'></i>
@@ -49,16 +49,31 @@
         <li><a href="./pages/Form.html">Admissions</a></li>
         <li><a href="./pages/campuslife.html">Campus Life</a></li>
         <li><a href="./pages/contact.html">Contact Us</a></li>
-        <li><a href="#">Fee Payment</a></li>
+        <li><a href="https://form.kiit.ac.in/payment/">Fee Payment</a></li>
         <li><a href="./pages/Policies.html">Policies</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="banner-img"><img src="assets/kiitbanner.png" alt="kiit" /></div>
-    </section>
+    </section> -->
+    <div class="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="./assets/kiitbanner.png" alt="Campus Image 1">
+          </div>
+          <div class="carousel-item">
+              <img src="./assets//campus2.png" alt="Campus Image 2">
+          </div>
+          <div class="carousel-item">
+              <img src="./assets/activity.png" alt="Campus Image 3">
+          </div>
+      </div>
+      <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+      <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+  </div>
 
     <section>
       <div class="container">
@@ -374,6 +389,7 @@
 
     <!-- FontAwesome for Social Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 

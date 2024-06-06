@@ -1,108 +1,260 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  header {
-    background-color:  antiquewhite;
-    color: #0d0808;
-    padding: 10px 0;
-    text-align: center;
-    
-  }
-  nav ul {
-    list-style: none;
-    
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-    
-  }
-  
-  nav ul li a {
-    color: #181515;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  nav ul li a:hover {
-    background-color: #45a049;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .about {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about h2 {
-    color: #0b0c0b;
-  }
-  
-  .about p {
-    margin: 10px 0;
-  }
-  
-  .about h3 {
-    color: #333;
-    margin-top: 20px;
-  }
-  
-  .about ul {
-    list-style: disc;
-    padding-left: 20px;
-  }
-  
-  .achievements {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .achievements h3 {
-    color: #080808;
-  }
-  
-  .achievements ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .achievements ul li {
-    background-size: 20px 20px;
-    padding-left: 30px;
-    margin-bottom: 10px;
-  }
-  
-  
-  
-  footer a  {
-    color: #0f0707;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  footer p {
-    padding-left: 500px;
-    color: #000000;
-    font-weight: bold;
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
-  }
-  footer a:hover{
-    background-color: #45a049;
-  }
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+
+
+/* Header Styling */
+.upper{
+  background: rgb(22,208,88);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.upper-links{
+  display: flex;
+  gap: 10px;
+  list-style: none;
   
+}
+.upper-links li a{
+  color: white;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.upper-btn{
+  background: blue;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+.upper-btn:hover{
+  cursor: pointer;
+}
+.social-links{
+  display: flex;
+  gap: 10px;
+}
+.bx{
+  font-size: 30px;
+}
+.bx:hover{
+  cursor: pointer;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.logo{
+  padding:10px ;
+}
+.logo img{
+  width: 200px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  font-size: 20px;
+}
+.nav-links li a:hover{
+  color: green;
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: green;
+  transition: width 0.3s;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+/* Hero Section Styling */
+.hero {
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Highlights Section Styling */
+.highlights {
+  padding: 50px 20px;
+  background: white;
+}
+
+.highlights h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h4 {
+  margin: 15px 0;
+  color: #007bff;
+}
+
+.card p {
+  padding: 0 15px 15px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section ul {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ddd;
+}
+
+.footer-section .socials a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-section .socials a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+

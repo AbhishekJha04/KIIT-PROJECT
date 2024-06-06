@@ -33,7 +33,7 @@
 .upper-btn:hover{
   cursor: pointer;
 }
-.links{
+.social-links{
   display: flex;
   gap: 10px;
 }
@@ -96,7 +96,8 @@
 }
 .nav-links a:hover::after {
   width: 100%;
-}
+ }
+ /*
  .banner-img{
   display: flex;
   justify-content: center;
@@ -105,7 +106,7 @@
 }
 .banner-img img{
   width: 100vw;
-}
+} */
 .container{
   display: flex;
   justify-content: center;
@@ -512,3 +513,48 @@
 }
 
 
+.carousel {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100vw;
+}
+
+.carousel-item img {
+  width: 100vw;
+  height: 70vh;
+  
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+main{
+  overflow: hidden;
+}

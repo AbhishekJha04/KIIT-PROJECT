@@ -1,26 +1,270 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.upper{
+  background: rgb(22,208,88);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.upper-links{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  
+}
+.upper-links li a{
+  color: white;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.upper-btn{
+  background: blue;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+.upper-btn:hover{
+  cursor: pointer;
+}
+.social-links{
+  display: flex;
+  gap: 10px;
+}
+.bx{
+  font-size: 30px;
+}
+.bx:hover{
+  cursor: pointer;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.logo{
+  padding:10px ;
+}
+.logo img{
+  width: 200px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  font-size: 20px;
+}
+.nav-links li a:hover{
+  color: green;
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: green;
+  transition: width 0.3s;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+.hero {
+  background: url(../assets/KIITEE-2023-Admission-Page-2-1200x746.jpg);
+  width: 98.7vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  gap: 400px;
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-content h1 {
+  font-size: 4.5em;
+  
+}
+
+.hero-content p {
+  font-size: 2.2em;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section ul {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ddd;
+}
+
+.footer-section .socials a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-section .socials a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
   }
-  body   {
-    background-color:  antiquewhite;;
-    color: #0d0808;
-    padding: 10px 0;
-    text-align: center;
-  }
-  footer a {
-    text-decoration: none;
-    color: #0d0808;
-    font-weight: bold;
-  }
-  footer a:hover{
-    background-color: green;
-    padding: 5px 10px;
-    border-radius: 5px;
-    
-  }
- 
+}
+
+
+

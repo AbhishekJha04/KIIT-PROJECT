@@ -2,69 +2,153 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> KIIT Admission Form</title>
-  <link rel="stylesheet" href="../stylesheet/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIIT Admission Form</title>
+    <link rel="stylesheet" href="../stylesheet/form.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
-  <img width="63" src="../assets/kiitlogo.png" alt="logo">
-  <h1>KIIT - Admission Application</h1>
-  <p>Please fill out the form below to apply for admission to KIIT.</p>
-  <h2>Personal Information</h2>
-  <label for="first_name">First Name:</label>
-  <input type="text" id="first_name" name="first_name" required><br>
+    <div class="upper">
+        <nav class="navbar">
+          <ul class="upper-links">
+            <li><a href="#">Sap Portal</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Notice</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Examination</a></li>
+            <li><a href="#">Placement</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Founder</a></li>
+            <li><a href="#">A-z Index</a></li>
+            <li><a href="#">Broucher</a></li>
+            <a href="https://form.kiit.ac.in/payment/"><button class="upper-btn">Fee Payment</button></a>
+          </ul>
+        </nav>
+        <div class="social-links">
+          <i class='bx bxl-facebook-circle' style='color:#ffffff'></i>
+          <i class='bx bxl-instagram' style='color:#ffffff'></i>
+          <i class='bx bxl-linkedin' style='color:#ffffff'></i>
+          <i class='bx bxl-youtube' style='color:#ffffff'></i>
+    
+        </div>
+      </div>
+      <header class="header">
+    
+        <div class="logo">
+          <a href="../main.html"><img width="60" src="../assets/KIIT-Logo-Silver-Jubilee-25-Years-1x.png" alt="logo" /></a>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./acadmics.html">Acadmics</a></li>
+            <li><a href="./Form.html">Admissions</a></li>
+            <li><a href="./campuslife.html">Campus Life</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="https://form.kiit.ac.in/payment/">Fee Payment</a></li>
+            <li><a href="./Policies.html">Policies</a></li>
+          </ul>
+        </nav>
+      </header>
 
-  <label for="last_name">Last Name:</label>
-  <input type="text" id="last_name" name="last_name" required><br>
+    <div class="hero">
+        <div class="hero-content">
+            <!-- <img src="../assets/KIITEE-2023-Admission-Page-2-1200x746.jpg" alt="KIIT Logo"> -->
+            <h1>KIIT Admission Application</h1>
+            <p>Join one of the leading universities. Fill out the form below to apply for admission.</p>
+        </div>
+    </div>
 
-  <label for="email">Email Address:</label>
-  <input type="email" id="email" name="email" required><br>
+    <div class="container">
+        <form id="admissionForm">
+            <h2>Personal Information</h2>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
 
-  <label for="phone">Phone Number:</label>
-  <input type="tel" id="phone" name="phone"><br><br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
 
-  <h2>Academic Information</h2>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
 
-  <label for="program">Program Applying For:</label>
-  <select name="program" id="program">
-    <option value="">Select Program</option>
-    <option value="computer_science">Computer Science</option>
-    <option value="business">Business Administration</option>
-    <option value="engineering">Engineering</option>
-    <option value="medical">MBBS</option>
-  </select><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-  <label for="high_school">High School Name:</label>
-  <input type="text" id="high_school" name="high_school" required><br>
+            <h2>Academic Information</h2>
+            <label for="program">Program Applying For:</label>
+            <select name="program" id="program" required>
+                <option value="">Select Program</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="business">Business Administration</option>
+                <option value="engineering">Engineering</option>
+                <option value="medical">MBBS</option>
+            </select>
 
-  <label for="graduation_year">Graduation Year:</label>
-  <input type="number" id="graduation_year" name="graduation_year" min="2018" max="2024" required><br>
+            <label for="high_school">High School Name:</label>
+            <input type="text" id="high_school" name="high_school" required>
 
-  <label for="gpa">GPA (if applicable):</label>
-  <input type="number" id="gpa" name="gpa" step="0.01" max="10" min="0"><br><br>
+            <label for="graduation_year">Graduation Year:</label>
+            <input type="number" id="graduation_year" name="graduation_year" min="2018" max="2024" required>
 
-  <h2>Supporting Documents</h2>
-  <p>Please upload the following documents (optional):</p>
-  <ul>
-    <li>High School Transcript (PDF)</li>
-    <li>Standardized Test Scores (if applicable, PDF)</li>
-    <li>Resume or CV (PDF)</li>
-  </ul>
-  <input type="file" id="document" name="document" accept=".pdf"><br><br>
+            <label for="gpa">GPA (if applicable):</label>
+            <input type="number" id="gpa" name="gpa" step="0.01" max="10" min="0">
 
-  <h2>Additional Information</h2>
-  <label for="essay">Personal Statement (optional):</label><br>
-  <textarea id="essay" name="essay" rows="5"></textarea><br>
+            <h2>Supporting Documents</h2>
+            <p>Please upload the following documents (optional):</p>
+            <ul>
+                <li>High School Transcript (PDF)</li>
+                <li>Standardized Test Scores (if applicable, PDF)</li>
+                <li>Resume or CV (PDF)</li>
+            </ul>
+            <input type="file" id="document" name="document" accept=".pdf">
 
-  <input type="submit" value="Submit Application">
-  </form>
+            <h2>Additional Information</h2>
+            <label for="essay">Personal Statement (optional):</label>
+            <textarea id="essay" name="essay" rows="5"></textarea>
 
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
 
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>Our college is committed to providing quality education and fostering a culture of research and innovation.
+            We strive to develop responsible citizens equipped with knowledge and skills to meet the challenges of the
+            future.</p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p>123 College Avenue,<br>City, State, 12345</p>
+          <p>Email: info@college.edu</p>
+          <p>Phone: (123) 456-7890</p>
+          <div class="socials">
+            <a href="#"><i class='bx bxl-facebook-circle' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bxl-instagram' style='color:#ffffff'></i></a>
+            <a href="#"> <i class='bx bxl-linkedin' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bxl-youtube' style='color:#ffffff'></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 College Name | Designed by College Web Team
+      </div>
+    </footer>
 </body>
 
 </html>
-<footer>
-  <a href="../main.html">KIIT University</a>
-</footer>

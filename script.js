@@ -1,33 +1,27 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function showSlide(index) {
+    if (index >= totalItems) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalItems - 1;
+    } else {
+        currentIndex = index;
+    }
+    const newTransformValue = `translateX(-${currentIndex * 100}%)`;
+    document.querySelector('.carousel-inner').style.transform = newTransformValue;
 }
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("news-card");
-    let dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-
-    // Adjust the transform property of the news-container
-    document.querySelector(".news-container").style.transform = `translateX(-${(slideIndex - 1) * 310}px)`;
+function nextSlide() {
+    showSlide(currentIndex + 1);
 }
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+setInterval(() => {
+    nextSlide();
+}, 5000); // Change slide every 3 seconds
